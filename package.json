@@ -5,6 +5,10 @@
   "description": "Adds a Run code lens to invoke JS functions via Node.js",
   "version": "0.0.2",
   "engines": { "vscode": "^1.70.0" },
+  "repository": {
+    "url": "git@github.com:alfu32/run-js-test-functions.git",
+    "type": "git+ssh"
+  },
   "activationEvents": [
     "onLanguage:javascript"
   ],
