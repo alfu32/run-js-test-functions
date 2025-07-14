@@ -18,7 +18,7 @@ export function activate(context: vscode.ExtensionContext) {
       output.clear();
       output.show(true);
       // spawn `node -e "require('...')(...)"` or better, pass args to a helper script
-	  const script = path.join(context.extensionPath, 'src', 'runner.js');
+	  const script = path.join(context.extensionPath, 'dist', 'runner.js');
       const proc = spawn(process.execPath, [script, fileUri.fsPath, funcName]);
 
       proc.stdout.on('data', d => output.append(d.toString()));
