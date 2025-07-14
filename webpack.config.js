@@ -46,10 +46,10 @@ const extensionConfig = {
     level: "log", // enables logging required for problem matchers
   },
   plugins: [
-    // <-- copy runner.mjs from src (or your project root) into out/
+    // <-- copy runner.cjs from src (or your project root) into out/
     new CopyPlugin({
       patterns: [
-        { from: 'src/runner.mjs', to: 'runner.mjs' }
+        { from: 'src/runner.cjs', to: 'runner.cjs' }
       ]
     })
   ]

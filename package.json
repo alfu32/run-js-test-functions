@@ -3,7 +3,7 @@
   "displayName": "Run JS Function",
   "description": "Adds a Run code lens to invoke JS functions via Node.js",
   "publisher": "alfu32@github.com",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "engines": {
     "vscode": "^1.70.0"
   },
@@ -17,8 +17,8 @@
   "main": "./dist/extension.js",
   "files": [
     "dist/**/*.js",
-    "src/runner.mjs",
-    "runner.mjs"
+    "src/runner.cjs",
+    "runner.cjs"
   ],
   "contributes": {
     "commands": [

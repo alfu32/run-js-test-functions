@@ -11,7 +11,7 @@ const [,, file, fn] = process.argv;
     // 1) Try CommonJS load
     try {
       mod = require(file);
-    } catch (e) {
+    } catch {
       // 2) Fallback to ESM import
       mod = await import(pathToFileURL(file).href);
     }
