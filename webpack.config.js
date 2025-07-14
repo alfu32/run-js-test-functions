@@ -3,6 +3,7 @@
 'use strict';
 
 const path = require('path');
+const CopyPlugin = require('copy-webpack-plugin');
 
 //@ts-check
 /** @typedef {import('webpack').Configuration} WebpackConfig **/
@@ -44,5 +45,13 @@ const extensionConfig = {
   infrastructureLogging: {
     level: "log", // enables logging required for problem matchers
   },
+  plugins: [
+    // <-- copy runner.js from src (or your project root) into out/
+    new CopyPlugin({
+      patterns: [
+        { from: 'src/runner.js', to: '' }
+      ]
+    })
+  ]
 };
 module.exports = [ extensionConfig ];
