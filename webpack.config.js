@@ -49,7 +49,7 @@ const extensionConfig = {
     // <-- copy runner.js from src (or your project root) into out/
     new CopyPlugin({
       patterns: [
-        { from: 'src/runner.js', to: '' }
+        { from: 'src/runner.js', to: 'runner.js' }
       ]
     })
   ]
